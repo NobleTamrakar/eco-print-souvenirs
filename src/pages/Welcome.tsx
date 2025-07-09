@@ -1,6 +1,5 @@
 
 import { Button } from "@/components/ui/button";
-import { Leaf, Recycle } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const Welcome = () => {
@@ -9,13 +8,14 @@ const Welcome = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center px-6 bg-gradient-to-b from-background to-secondary/20">
       <div className="text-center space-y-8 max-w-sm">
-        {/* Logo/Icon */}
+        {/* Logo */}
         <div className="relative">
-          <div className="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 eco-shadow">
-            <div className="relative">
-              <Leaf className="w-10 h-10 text-primary" />
-              <Recycle className="w-6 h-6 text-primary/60 absolute -bottom-1 -right-1" />
-            </div>
+          <div className="w-32 h-32 mx-auto mb-6 flex items-center justify-center">
+            <img 
+              src="/lovable-uploads/53a2d6a1-30ca-4097-b382-d5400679066b.png" 
+              alt="Re-Eco Logo"
+              className="w-full h-full object-contain"
+            />
           </div>
         </div>
 
