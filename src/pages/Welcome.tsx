@@ -22,7 +22,7 @@ const Welcome = () => {
         {/* App Name & Tagline */}
         <div className="space-y-3">
           <h1 className="text-4xl font-bold text-foreground tracking-tight">
-            EcoVend
+            Re-Eco
           </h1>
           <p className="text-muted-foreground text-lg leading-relaxed">
             Transform your waste into meaningful souvenirs from your travels
