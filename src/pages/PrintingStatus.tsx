@@ -53,14 +53,25 @@ const PrintingStatus = () => {
       {/* Content */}
       <div className="px-6 py-12 text-center">
         <div className="max-w-sm mx-auto space-y-8">
-          {/* Progress Circle */}
+          {/* Progress Circle or Final Image */}
           <div className="relative">
-            <div className="w-48 h-48 mx-auto">
-              {isComplete ? (
-                <div className="w-full h-full bg-primary/10 rounded-full flex items-center justify-center eco-shadow">
-                  <CheckCircle className="w-16 h-16 text-primary" />
+            {isComplete ? (
+              <div className="space-y-6">
+                {/* Final Model Picture */}
+                <div className="w-64 h-64 mx-auto rounded-2xl overflow-hidden eco-shadow">
+                  <img 
+                    src="https://images.unsplash.com/photo-1466442929976-97f336a657be?w=600&h=600&fit=crop" 
+                    alt="Completed Temple Miniature"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-              ) : (
+                {/* Success Icon */}
+                <div className="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center eco-shadow">
+                  <CheckCircle className="w-8 h-8 text-primary" />
+                </div>
+              </div>
+            ) : (
+              <div className="w-48 h-48 mx-auto">
                 <div className="relative w-full h-full">
                   <svg className="w-full h-full transform -rotate-90" viewBox="0 0 100 100">
                     <circle
@@ -93,8 +104,8 @@ const PrintingStatus = () => {
                     </div>
                   </div>
                 </div>
-              )}
-            </div>
+              </div>
+            )}
           </div>
 
           {/* Status Text */}
